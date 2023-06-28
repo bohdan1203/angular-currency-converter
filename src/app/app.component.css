@@ -1,0 +1,19 @@
+.currency-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+.error-message {
+  color: rgb(199, 18, 18);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .currency-controls {
+    flex-direction: column;
+  }
+}

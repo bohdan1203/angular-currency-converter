@@ -1,0 +1,16 @@
+<div class="currency-block">
+  <select [(ngModel)]="currency" (ngModelChange)="currencyChange.emit($event)">
+    <option value="" selected disabled>Select Currency</option>
+    <option value="UAH">UAH</option>
+    <option value="EUR">EUR</option>
+    <option value="USD">USD</option>
+  </select>
+
+  <input
+    type="number"
+    step="0.01"
+    min="0"
+    [(ngModel)]="amount"
+    (ngModelChange)="amountChange.emit($event)"
+  />
+</div>
